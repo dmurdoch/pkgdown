@@ -249,7 +249,7 @@ mark {
 
 
 /* TOC heading */
-h2[data-toc-skip] {
+h2[data-toc-skip], #pkgdown-sidebar h2[data-toc-skip] {
   font-size: x-large;
 }
 
@@ -343,6 +343,7 @@ a:hover {
 
 a.footnote-ref {
   cursor: pointer;
+}
 /* Reference index & topics ----------------------------------------------- */
 
 .ref-index th {font-weight: normal;}
@@ -364,4 +365,100 @@ table {
 
 .fab {
     font-family: "Font Awesome 5 Brands" !important;
+}
+
+/* logo homepage */
+.pkg-logo {
+  float: right;
+  width: 100px;
+  margin-left: 30px;
+  margin-top: 25px;
+}
+
+@media (max-width: 767px) {
+  .pkg-logo {
+  float: none;
+  width: 100px;
+}
+}
+
+div.pb-2.mt-4.mb-2.border-bottom {
+  min-height: 129px;
+}
+
+/* tweak headroom.js to not disappear as aggressively at the top of the page */
+/* https://github.com/rstudio/quillt/blob/57ba0ce7aa850e42165a8993d4b493c44917b7a8/inst/pkgdown/assets/rmd.css#L452 */
+.headroom {
+  will-change: transform;
+  transition: transform 400ms ease;
+}
+
+/* blockquote ---------------------------------------------- */
+
+blockquote, .line-block {
+    border-left: .5rem solid #eee;
+    padding-left: .5rem;
+    margin-left: -.5rem;
+}
+
+/* Search ---------------------------------------------- */
+
+mark {
+  background: linear-gradient(-100deg,
+    hsla(48,92%,75%,.3),
+    hsla(48,92%,75%,.7) 95%,
+    hsla(48,92%,75%,.1)
+  )
+}
+
+.algolia-autocomplete .aa-hint {
+  color: #999;
+}
+.algolia-autocomplete .aa-dropdown-menu {
+  width: max(100%, 20rem);
+  background-color: #fff;
+  border: 1px solid var(--gray);
+  border-radius: 0.2rem;
+  margin-top: 2px;
+
+  max-height: 50vh;
+  overflow-y: auto;
+}
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
+  cursor: pointer;
+  padding: 5px 4px;
+  border-bottom: 1px #ddd solid;
+  font-size: 0.9rem;
+  color: #5E5E5E;
+
+}
+
+.search-details {
+  font-size: 0.9rem;
+  color: #0054AD;
+  display: inline;
+  font-weight: bolder;
+}
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
+  background-color: #B2D7FF;
+/* Compromise to avoid flash of invisible text + flash of unstyled text */
+body {
+  font-display: fallback;
+}
+
+/* Navbar constrast */
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0,0,0,0.7);
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgba(0,0,0,0.9);
+}
+
+/* Details margin */
+summary {
+  margin-bottom: 1rem;
+}
+
+details p {
+  margin-top: -.5rem;
 }

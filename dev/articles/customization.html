@@ -5,6 +5,8 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Learn how to change the look and feel of pkgdown websites.
+">
 <title>Customize your pkgdown website • pkgdown</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
@@ -12,16 +14,14 @@
 <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../apple-touch-icon-120x120.png">
 <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png">
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png">
-<script src="../deps/jquery-3.5.1/jquery-3.5.1.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="../deps/bootstrap-4.5.3/bootstrap.min.css" rel="stylesheet">
 <script src="../deps/bootstrap-4.5.3/bootstrap.bundle.min.js"></script><script src="../deps/bs3compat-0.2.4/tabs.js"></script><script src="../deps/bs3compat-0.2.4/bs3compat.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- bootstrap-toc --><link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css">
-<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
 <link href="../syntax-highlighting.css" rel="stylesheet">
-<script src="../pkgdown.js"></script><!-- docsearch --><script src="../docsearch.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.3/docsearch.min.css" integrity="sha256-QOSRU/ra9ActyXkIBbiIB144aDBdtvXBcNc3OTNuX/Q=" crossorigin="anonymous">
-<link href="../docsearch.css" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script><meta property="og:title" content="Customize your pkgdown website">
+<script src="../pkgdown.js"></script><meta property="og:title" content="Customize your pkgdown website">
 <meta property="og:description" content="Learn how to change the look and feel of pkgdown websites.
 ">
 <meta property="og:image" content="https://pkgdown.r-lib.org/logo.png">
@@ -37,7 +37,7 @@
   gtag('config', 'UA-115082821-1');
 </script>
 </head>
-<body data-spy="scroll" data-target="#toc" data-headroom data-tolerance="5" data-offset="100">
+<body data-spy="scroll" data-target="#toc" data-headroom>
     
 
       <nav class="navbar fixed-top navbar-light navbar-expand-lg bg-light"><div class="container">
@@ -57,20 +57,20 @@
 <li class="nav-item">
   <a class="nav-link" href="../reference/index.html">Reference</a>
 </li>
-<li class="nav-item dropdown">
-  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">Articles</a>
-  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+<li class="active nav-item dropdown">
+  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
+  <div class="dropdown-menu" aria-labelledby="dropdown-articles">
     <a class="dropdown-item" href="../articles/linking.html">Auto-linking</a>
     <a class="dropdown-item" href="../articles/search.html">Search</a>
     <a class="dropdown-item" href="../articles/metadata.html">Metadata</a>
     <a class="dropdown-item" href="../articles/customization.html">Customize your pkgdown website</a>
     <div class="dropdown-divider"></div>
-    <a class="dropdown-item" href="../articles/index.html">More...</a>
+    <a class="dropdown-item" href="../articles/index.html">More articles...</a>
   </div>
 </li>
 <li class="nav-item dropdown">
-  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">News</a>
-  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-news">News</a>
+  <div class="dropdown-menu" aria-labelledby="dropdown-news">
     <h6 class="dropdown-header" data-toc-skip>Releases</h6>
     <a class="external-link dropdown-item" href="https://www.tidyverse.org/blog/2020/09/pkgdown-1-6-0/">Version 1.6.0</a>
     <a class="external-link dropdown-item" href="https://www.tidyverse.org/blog/2020/03/pkgdown-1-5-0/">Version 1.5.0</a>
@@ -84,13 +84,12 @@
 </li>
       </ul>
 <form class="form-inline my-2 my-lg-0" role="search">
-        <input type="search" class="form-control mr-sm-2" aria-label="Search" name="search-input" id="search-input" placeholder="Search..." autocomplete="off">
+        <input type="search" class="form-control mr-sm-2" aria-label="Search" name="search-input" data-search-index="/dev/search.json" id="search-input" placeholder="Search..." autocomplete="off">
 </form>
-      
 
       <ul class="navbar-nav ml-1">
 <li class="nav-item">
-  <a class="external-link nav-link" href="https://github.com/r-lib/pkgdown/">
+  <a class="external-link nav-link" href="https://github.com/r-lib/pkgdown/" aria-label="github">
     <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
@@ -101,7 +100,7 @@
 </nav><div class="container template-article">
 <script src="customization_files/accessible-code-block-0.0.1/empty-anchor.js"></script><div class="row">
   <div class="col-md-9 contents">
-    <div class="page-header pb-2 mt-4 mb-2 border-bottom toc-ignore">
+    <img src="../package-logo.png" class="pkg-logo" alt=""><div class="page-header pb-2 mt-4 mb-2 border-bottom toc-ignore">
       <h1 class="display-4" data-toc-skip>Customize your pkgdown website</h1>
             
       
@@ -122,7 +121,7 @@
 <p>This vignette begins with a discussion of the most common theming and layout options made available through <code>_pkgdown.yml</code>. We’ll then discuss how to customise the underlying HTML template files, this is less commonly needed but gives you full control over the appearance of the website. Next, we’ll discuss how to give multiple sites the same style by using a package, and we’ll finish up with some workflow advice.</p>
 <div id="getting-started" class="section level2">
 <h2 class="hasAnchor">
-<a href="#getting-started" class="anchor"></a>Getting started</h2>
+<a href="#getting-started" class="anchor" aria-hidden="true"></a>Getting started</h2>
 <p>Most theming features work only with Bootstrap 4, so begin by updating your site to use Bootstrap 4 by adding the following lines to your <code>_pkgdown.yml</code>:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">template</span><span class="kw">:</span></span>
 <span id="cb2-2"><a href="#cb2-2"></a><span class="at">  </span><span class="fu">bootstrap</span><span class="kw">:</span><span class="at"> </span><span class="dv">4</span></span></code></pre></div>
@@ -130,7 +129,7 @@
 </div>
 <div id="theming" class="section level2">
 <h2 class="hasAnchor">
-<a href="#theming" class="anchor"></a>Theming</h2>
+<a href="#theming" class="anchor" aria-hidden="true"></a>Theming</h2>
 <p>There are three main ways to change the visual style of your site:</p>
 <ul>
 <li><p>With a pre-packaged bootswatch theme.</p></li>
@@ -140,13 +139,12 @@
 <p>They can be combined depending on your needs.</p>
 <div id="choosing-a-bootswatch-theme" class="section level3">
 <h3 class="hasAnchor">
-<a href="#choosing-a-bootswatch-theme" class="anchor"></a>Choosing a Bootswatch theme</h3>
-<p>The easiest way to change the appearance of your website, or to start changing it, is to pick a complete Bootswatch theme. You can choose any <a href="https://bootswatch.com/" class="external-link">Bootswatch theme</a> that’s compatible with the Bootstrap version you use. Run either <code><a href="https://rstudio.github.io/bslib//reference/bootswatch_themes.html" class="external-link">bslib::bootswatch_themes(3)</a></code> or <code><a href="https://rstudio.github.io/bslib//reference/bootswatch_themes.html" class="external-link">bslib::bootswatch_themes(4)</a></code> to get a list. If you were using the paper theme, note that it was renamed <a href="https://blog.bootswatch.com/post/167233472837/announcing-bootswatch-400" class="external-link">materia</a> in Bootstrap version 4.</p>
+<a href="#choosing-a-bootswatch-theme" class="anchor" aria-hidden="true"></a>Choosing a Bootswatch theme</h3>
+<p>The easiest way to change the appearance of your website, or to start changing it, is to pick a complete Bootswatch theme. You can choose any <a href="https://bootswatch.com/" class="external-link">Bootswatch theme</a> that’s compatible with the Bootstrap version you use. Run either <code>bslib::bootswatch_themes(3)</code> or <code>bslib::bootswatch_themes(4)</code> to get a list. If you were using the paper theme, note that it was renamed <a href="https://blog.bootswatch.com/post/167233472837/announcing-bootswatch-400" class="external-link">materia</a> in Bootstrap version 4.</p>
 <p>To choose a Bootswatch theme here’s what to write in your <code>pkgdown</code> configuration.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">template</span><span class="kw">:</span></span>
 <span id="cb3-2"><a href="#cb3-2"></a><span class="at">  </span><span class="fu">bootstrap</span><span class="kw">:</span><span class="at"> </span><span class="dv">4</span></span>
-<span id="cb3-3"><a href="#cb3-3"></a><span class="at">  </span><span class="fu">params</span><span class="kw">:</span></span>
-<span id="cb3-4"><a href="#cb3-4"></a><span class="at">    </span><span class="fu">bootswatch</span><span class="kw">:</span><span class="at"> materia</span></span></code></pre></div>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="at">  </span><span class="fu">bootswatch</span><span class="kw">:</span><span class="at"> materia</span></span></code></pre></div>
 <p><strong>NB</strong>: Some Bootswatch templates like lux or pulse won’t work out of the box because of their tall navbar. You’ll need to use custom CSS to add <a href="https://stackoverflow.com/questions/10336194/top-nav-bar-blocking-top-content-of-the-page" class="external-link">padding to the body</a>.</p>
 <p>By default pkgdown uses an accessible colour scheme for code highlighting designed to work well on a light background. If you wish to opt out of this colour scheme to suit a dark Bootswatch theme better, set <code>highlightcss</code> to false:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">template</span><span class="kw">:</span></span>
@@ -156,43 +154,61 @@
 </div>
 <div id="bslib-variables" class="section level3">
 <h3 class="hasAnchor">
-<a href="#bslib-variables" class="anchor"></a>bslib variables</h3>
+<a href="#bslib-variables" class="anchor" aria-hidden="true"></a>bslib variables</h3>
 <p>Rather than picking an entire theme, you can customise individual theme components using bslib variables:</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1"></a><span class="fu">template</span><span class="kw">:</span></span>
 <span id="cb5-2"><a href="#cb5-2"></a><span class="at">  </span><span class="fu">bootstrap</span><span class="kw">:</span><span class="at"> </span><span class="dv">4</span></span>
-<span id="cb5-3"><a href="#cb5-3"></a><span class="at">  </span><span class="fu">params</span><span class="kw">:</span></span>
-<span id="cb5-4"><a href="#cb5-4"></a><span class="at">    </span><span class="fu">bslib</span><span class="kw">:</span></span>
-<span id="cb5-5"><a href="#cb5-5"></a><span class="at">      </span><span class="fu">bg</span><span class="kw">:</span><span class="at"> </span><span class="st">"#202123"</span></span>
-<span id="cb5-6"><a href="#cb5-6"></a><span class="at">      </span><span class="fu">fg</span><span class="kw">:</span><span class="at"> </span><span class="st">"#B8BCC2"</span></span>
-<span id="cb5-7"><a href="#cb5-7"></a><span class="at">      </span><span class="fu">primary</span><span class="kw">:</span><span class="at"> </span><span class="st">"#EA80FC"</span></span>
-<span id="cb5-8"><a href="#cb5-8"></a><span class="at">      </span><span class="fu">success</span><span class="kw">:</span><span class="at"> </span><span class="st">"#4F9B29"</span></span>
-<span id="cb5-9"><a href="#cb5-9"></a><span class="at">      </span><span class="fu">info</span><span class="kw">:</span><span class="at"> </span><span class="st">"#28B3ED"</span></span>
-<span id="cb5-10"><a href="#cb5-10"></a><span class="at">      </span><span class="fu">warning</span><span class="kw">:</span><span class="at"> </span><span class="st">"#FD7424"</span></span>
-<span id="cb5-11"><a href="#cb5-11"></a><span class="at">      </span><span class="fu">danger</span><span class="kw">:</span><span class="at"> </span><span class="st">"#F7367E"</span></span></code></pre></div>
+<span id="cb5-3"><a href="#cb5-3"></a><span class="at">  </span><span class="fu">bslib</span><span class="kw">:</span></span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="at">    </span><span class="fu">font_scale</span><span class="kw">:</span><span class="at"> </span><span class="fl">1.2</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a><span class="at">    </span><span class="fu">base_font</span><span class="kw">:</span></span>
+<span id="cb5-6"><a href="#cb5-6"></a><span class="at">      </span><span class="fu">google</span><span class="kw">:</span><span class="at"> </span><span class="st">"Prompt"</span></span>
+<span id="cb5-7"><a href="#cb5-7"></a><span class="at">    </span><span class="fu">heading_font</span><span class="kw">:</span></span>
+<span id="cb5-8"><a href="#cb5-8"></a><span class="at">      </span><span class="fu">google</span><span class="kw">:</span><span class="at"> </span><span class="st">"Muli"</span></span>
+<span id="cb5-9"><a href="#cb5-9"></a><span class="at">    </span><span class="fu">code_font</span><span class="kw">:</span></span>
+<span id="cb5-10"><a href="#cb5-10"></a><span class="at">      </span><span class="fu">google</span><span class="kw">:</span><span class="at"> </span><span class="st">"JetBrains Mono"</span></span>
+<span id="cb5-11"><a href="#cb5-11"></a><span class="at">    </span><span class="fu">bg</span><span class="kw">:</span><span class="at"> </span><span class="st">"#202123"</span></span>
+<span id="cb5-12"><a href="#cb5-12"></a><span class="at">    </span><span class="fu">fg</span><span class="kw">:</span><span class="at"> </span><span class="st">"#B8BCC2"</span></span>
+<span id="cb5-13"><a href="#cb5-13"></a><span class="at">    </span><span class="fu">primary</span><span class="kw">:</span><span class="at"> </span><span class="st">"#EA80FC"</span></span>
+<span id="cb5-14"><a href="#cb5-14"></a><span class="at">    </span><span class="fu">success</span><span class="kw">:</span><span class="at"> </span><span class="st">"#4F9B29"</span></span>
+<span id="cb5-15"><a href="#cb5-15"></a><span class="at">    </span><span class="fu">info</span><span class="kw">:</span><span class="at"> </span><span class="st">"#28B3ED"</span></span>
+<span id="cb5-16"><a href="#cb5-16"></a><span class="at">    </span><span class="fu">warning</span><span class="kw">:</span><span class="at"> </span><span class="st">"#FD7424"</span></span>
+<span id="cb5-17"><a href="#cb5-17"></a><span class="at">    </span><span class="fu">danger</span><span class="kw">:</span><span class="at"> </span><span class="st">"#F7367E"</span></span></code></pre></div>
 <p>You can find a full list of variables in <code><a href="https://rstudio.github.io/bslib//articles/bs4-variables.html" class="external-link">vignette("bs4-variables", package = "bslib")</a></code>.</p>
 <p>You can also combine both approaches, starting with a Bootswatch theme then changing the bits you don’t like:</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1"></a><span class="fu">template</span><span class="kw">:</span></span>
 <span id="cb6-2"><a href="#cb6-2"></a><span class="at">  </span><span class="fu">bootstrap</span><span class="kw">:</span><span class="at"> </span><span class="dv">4</span></span>
-<span id="cb6-3"><a href="#cb6-3"></a><span class="at">  </span><span class="fu">params</span><span class="kw">:</span></span>
-<span id="cb6-4"><a href="#cb6-4"></a><span class="at">    </span><span class="fu">bootswatch</span><span class="kw">:</span><span class="at"> materia</span></span>
-<span id="cb6-5"><a href="#cb6-5"></a><span class="at">    </span><span class="fu">bslib</span><span class="kw">:</span></span>
-<span id="cb6-6"><a href="#cb6-6"></a><span class="at">      </span><span class="fu">bg</span><span class="kw">:</span><span class="at"> </span><span class="st">"#202123"</span></span>
-<span id="cb6-7"><a href="#cb6-7"></a><span class="at">      </span><span class="fu">fg</span><span class="kw">:</span><span class="at"> </span><span class="st">"#B8BCC2"</span></span></code></pre></div>
+<span id="cb6-3"><a href="#cb6-3"></a><span class="at">  </span><span class="fu">bootswatch</span><span class="kw">:</span><span class="at"> materia</span></span>
+<span id="cb6-4"><a href="#cb6-4"></a><span class="at">  </span><span class="fu">bslib</span><span class="kw">:</span></span>
+<span id="cb6-5"><a href="#cb6-5"></a><span class="at">    </span><span class="fu">bg</span><span class="kw">:</span><span class="at"> </span><span class="st">"#202123"</span></span>
+<span id="cb6-6"><a href="#cb6-6"></a><span class="at">    </span><span class="fu">fg</span><span class="kw">:</span><span class="at"> </span><span class="st">"#B8BCC2"</span></span></code></pre></div>
+</div>
+<div id="navbar-colors" class="section level3">
+<h3 class="hasAnchor">
+<a href="#navbar-colors" class="anchor" aria-hidden="true"></a>Navbar colors</h3>
+<p>You can also customize the color scheme of the navbar by using the <a href="https://getbootstrap.com/docs/4.0/components/navbar/#color-schemes" class="external-link"><code>type</code> and <code>bg</code> parameters</a>. For example, if your theme is dark, you probably want to use a dark navbar:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb7-1"><a href="#cb7-1"></a><span class="fu">navbar</span><span class="kw">:</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> dark</span></span></code></pre></div>
+<p>Alternatively, you could use the bg parameter to make the navbar more visually prominent:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb8-1"><a href="#cb8-1"></a><span class="fu">navbar</span><span class="kw">:</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> dark</span></span>
+<span id="cb8-3"><a href="#cb8-3"></a><span class="at">  </span><span class="fu">bg</span><span class="kw">:</span><span class="at"> primary</span></span></code></pre></div>
+<p>will produce a navbar with a background of the primary color (defined by Bootstrap default, a Bootswatch theme, or bslib variable).</p>
+<p>To change the color of the navbar background depending on its type, you can also use the bslib variables <code>navbar-light-bg</code> and <code>navbar-dark-bg</code>.</p>
 </div>
 <div id="more-css-js-other-assets" class="section level3">
 <h3 class="hasAnchor">
-<a href="#more-css-js-other-assets" class="anchor"></a>More CSS / JS / other assets</h3>
+<a href="#more-css-js-other-assets" class="anchor" aria-hidden="true"></a>More CSS / JS / other assets</h3>
 <p>If you know CSS or JS, you can customise your site by including <code>pkgdown/extra.css</code> or <code>pkgdown/extra.js</code>. These will be automatically copied the home directory of your website and inserted into the <code>&lt;head&gt;</code> (after the pkgdown defaults).</p>
 <p>You can add arbitrary additional files by putting them in <code>pkgdown/assets/BS4</code>. The contents will be automatically copied to the root of your website folder by pkgdown by <code><a href="../reference/init_site.html">init_site()</a></code>.</p>
 </div>
 </div>
 <div id="layout" class="section level2">
 <h2 class="hasAnchor">
-<a href="#layout" class="anchor"></a>Layout</h2>
-<p>You can also customise the contents of the navbar, footer, and sidebar that appears on the home page of your site.</p>
+<a href="#layout" class="anchor" aria-hidden="true"></a>Layout</h2>
+<p>You can also customise the contents of the navbar, footer, and sidebar that appears on the home page of your site. Furthermore, if you want to tweak <em>which</em> authors of the package appear in the sidebar and footer, also refer to <code><a href="../reference/build_home.html">?build_home</a></code>.</p>
 <div id="navbar" class="section level3">
 <h3 class="hasAnchor">
-<a href="#navbar" class="anchor"></a>Navbar</h3>
+<a href="#navbar" class="anchor" aria-hidden="true"></a>Navbar</h3>
 <p>By default, the top navbar will contain links to:</p>
 <ul>
 <li>“Get Started”, if you have an article with the same name as the package (e.g., <code>vignettes/pkgdown.Rmd</code>).</li>
@@ -226,13 +242,19 @@
         href: articles/b11.html
     twitter:
       icon: "fab fa-twitter fa-lg"
-      href: https://twitter.com/hadleywickham</code></pre>
-<p>Components can contain sub-<code>menu</code>s with headings (indicated by missing <code>href</code>) and separators (indicated by a bunch of <code><a href="https://rdrr.io/r/base/Arithmetic.html" class="external-link">-</a></code>). You can also use <code>icon</code>s from <a href="https://fontawesome.com/icons?d=gallery" class="external-link">fontawesome</a>.</p>
+      href: https://twitter.com/hadleywickham
+      aria-label: "twitter account"</code></pre>
+<p>Components can contain sub-<code>menu</code>s with headings (indicated by missing <code>href</code>) and separators (indicated by a bunch of <code>-</code>). You can also use <code>icon</code>s from <a href="https://fontawesome.com/icons?d=gallery" class="external-link">fontawesome</a>. When using icons with no text, for accessibility it’s best practice to include an <code>aria-label</code> for screenreader users.</p>
 <p>This yaml would override the default “articles” component, and add a new “twitter” component. Unless you explicitly mention new components in the <code>structure</code> they’ll be added to the far right of the left menu.</p>
+<p>You can also customize the color scheme of the navbar by using the <a href="https://getbootstrap.com/docs/4.0/components/navbar/#color-schemes" class="external-link"><code>type</code> and <code>bg</code> parameters</a>:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb11-1"><a href="#cb11-1"></a><span class="fu">navbar</span><span class="kw">:</span></span>
+<span id="cb11-2"><a href="#cb11-2"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> dark</span></span>
+<span id="cb11-3"><a href="#cb11-3"></a><span class="at">  </span><span class="fu">bg</span><span class="kw">:</span><span class="at"> primary</span></span></code></pre></div>
+<p>will produce a navbar with a dark background of the primary color (defined by Bootstrap default, a Bootswatch theme, or bslib variable cf <code><a href="../articles/customization.html">vignette("customization", package ="pkgdown")</a></code>)</p>
 </div>
 <div id="footer" class="section level3">
 <h3 class="hasAnchor">
-<a href="#footer" class="anchor"></a>Footer</h3>
+<a href="#footer" class="anchor" aria-hidden="true"></a>Footer</h3>
 <p>By default, the footer is automatically populated with:</p>
 <ul>
 <li>The names of the <a href="https://pkgdown.r-lib.org/reference/build_home.html#yaml-config-authors">authors <code>authors</code></a>, on the left.</li>
@@ -250,18 +272,18 @@
 </div>
 <div id="sidebar" class="section level3">
 <h3 class="hasAnchor">
-<a href="#sidebar" class="anchor"></a>Sidebar</h3>
+<a href="#sidebar" class="anchor" aria-hidden="true"></a>Sidebar</h3>
 <p>By default, the sidebar is automatically populated with the following elements (in order): <code>links</code>, <code>license</code>, <code>community</code>, <code>citation</code>, <code>authors</code>, <code>dev</code>. We shall first explain their creation, then how to tweak them.</p>
 <ul>
 <li>
 <p><code>links</code>: The sidebar links are automatically generated by inspecting the <code>URL</code> and <code>BugReports</code> fields of the <code>DESCRIPTION</code>. If your package is developed on GitHub, you can use <code>usethis::use_github_links()</code> to populate these fields.</p>
 <p>You can add additional links with a subsection called <code>links</code>, which should contain a list of <code>text</code> + <code>href</code> elements:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">home</span><span class="kw">:</span></span>
-<span id="cb10-2"><a href="#cb10-2"></a><span class="at">  </span><span class="fu">links</span><span class="kw">:</span></span>
-<span id="cb10-3"><a href="#cb10-3"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Link text</span></span>
-<span id="cb10-4"><a href="#cb10-4"></a><span class="at">    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://website.com</span></span>
-<span id="cb10-5"><a href="#cb10-5"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Roadmap</span></span>
-<span id="cb10-6"><a href="#cb10-6"></a><span class="at">    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> /roadmap.html</span></span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb13-1"><a href="#cb13-1"></a><span class="fu">home</span><span class="kw">:</span></span>
+<span id="cb13-2"><a href="#cb13-2"></a><span class="at">  </span><span class="fu">links</span><span class="kw">:</span></span>
+<span id="cb13-3"><a href="#cb13-3"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Link text</span></span>
+<span id="cb13-4"><a href="#cb13-4"></a><span class="at">    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://website.com</span></span>
+<span id="cb13-5"><a href="#cb13-5"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Roadmap</span></span>
+<span id="cb13-6"><a href="#cb13-6"></a><span class="at">    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> /roadmap.html</span></span></code></pre></div>
 </li>
 <li><p><code>license</code>: Licensing information if <code>LICENSE</code>/<code>LICENCE</code> or <code>LICENSE.md</code>/<code>LICENCE.md</code> files are present.</p></li>
 <li><p><code>community</code>: Community information is linked in the side bar using the <code>.github/CONTRIBUTING.md</code> and <code>.github/CODE_OF_CONDUCT.md</code> files, if present.</p></li>
@@ -296,7 +318,7 @@
 </div>
 <div id="templates" class="section level2">
 <h2 class="hasAnchor">
-<a href="#templates" class="anchor"></a>Templates</h2>
+<a href="#templates" class="anchor" aria-hidden="true"></a>Templates</h2>
 <p>Other layout changes require tinkering with pkgdown <strong>templates</strong> (in <code>inst/templates</code> in <a href="https://github.com/r-lib/pkgdown" class="external-link">pkgdown source</a>). Three pkgdown templates are empty by default, so you can fill them with your own content:</p>
 <ul>
 <li>
@@ -308,8 +330,8 @@
 </ul>
 <p>To add content to these templates:</p>
 <ul>
-<li>Create a folder <code>inst/pkgdown/templates</code>.</li>
-<li>Create <code>in-header.html</code>, <code>before-body.html</code> or <code>after-body.html</code> in that folder, depending on your needs. E.g. you could save the lines corresponding to your analytics provider, if not Google Analytics, in <code>inst/pkgdown/templates/in-header.html</code>.</li>
+<li>Create a folder <code>pkgdown/templates</code>.</li>
+<li>Create <code>in-header.html</code>, <code>before-body.html</code> or <code>after-body.html</code> in that folder, depending on your needs. E.g. you could save the lines corresponding to your analytics provider, if not Google Analytics, in <code>pkgdown/templates/in-header.html</code>.</li>
 <li>Edit and save that file.</li>
 <li>Re-build your website, inspect it (and its source, if needed).</li>
 </ul>
@@ -317,19 +339,19 @@
 </div>
 <div id="sharing-pkgdown-styles-template-packages" class="section level2">
 <h2 class="hasAnchor">
-<a href="#sharing-pkgdown-styles-template-packages" class="anchor"></a>Sharing pkgdown styles: template packages</h2>
+<a href="#sharing-pkgdown-styles-template-packages" class="anchor" aria-hidden="true"></a>Sharing pkgdown styles: template packages</h2>
 <p>To share a pkgdown style across several packages, the best workflow is to create… a package! It can contain any of the following:</p>
 <ul>
 <li>A configuration file in <code>inst/pkgdown/_pkgdown.yml</code>. This can be used to set (e.g.) author definitions, Bootstrap version and variables, the sidebar, footer, navbar, etc. Configuration parameters supplied by a template package have low priority: they will be overridden by a local <code>_pkgdown.yml</code> which is in turn overridden by <code>override</code> parameter of <code><a href="../reference/build_site.html">build_site()</a></code>.</li>
-<li>Templates in <code>inst/pkgdown/templates/BS4</code> will override the default templates.</li>
-<li>Assets in <code>inst/pkgdown/assets/BS4</code> will be copied in to the destination directory.</li>
+<li>Templates in <code>inst/pkgdown/templates/</code> will override the default templates.</li>
+<li>Assets in <code>inst/pkgdown/assets/</code> will be copied in to the destination directory.</li>
 </ul>
 <p>Once you have created your template package <code>theverybest</code>, you can use it by:</p>
 <ul>
 <li>
 <p>Setting it as your sites theme:</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb14-1"><a href="#cb14-1"></a><span class="fu">template</span><span class="kw">:</span></span>
-<span id="cb14-2"><a href="#cb14-2"></a><span class="at">  </span><span class="fu">package</span><span class="kw">:</span><span class="at"> theverybest</span></span></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb17-1"><a href="#cb17-1"></a><span class="fu">template</span><span class="kw">:</span></span>
+<span id="cb17-2"><a href="#cb17-2"></a><span class="at">  </span><span class="fu">package</span><span class="kw">:</span><span class="at"> theverybest</span></span></code></pre></div>
 </li>
 <li>
 <p>If you’re building your site using GitHub actions or other similar tool, you’ll also need to installed <code>theverybest</code>. If you’re using remotes or pak to install packages, you can add the following line to your <code>DESCRIPTION</code>:</p>
@@ -349,7 +371,7 @@
 <p>But please note that these templates aren’t suitable for use with your own package as they’re all designed to give a common visual identity to a specific family of packages.</p>
 <div id="workflow-tips" class="section level3">
 <h3 class="hasAnchor">
-<a href="#workflow-tips" class="anchor"></a>Workflow tips</h3>
+<a href="#workflow-tips" class="anchor" aria-hidden="true"></a>Workflow tips</h3>
 <p>When crafting a new style you will need to re-build your website quite often. How to have a faster workflow?</p>
 <ul>
 <li>Use a simpler package for previewing your style. This might be over the top for a single package but if you are working on a template package, the template package can contain minimal vignettes, reference pages for testing.</li>
@@ -359,7 +381,7 @@
 </div>
 <div id="previews-on-pull-requests" class="section level3">
 <h3 class="hasAnchor">
-<a href="#previews-on-pull-requests" class="anchor"></a>Previews on pull requests</h3>
+<a href="#previews-on-pull-requests" class="anchor" aria-hidden="true"></a>Previews on pull requests</h3>
 <p>Furthermore, it might be useful for you to get a preview of the website in internal pull requests. For that, you could use Netlify and GitHub Actions (or apply a similar logic to your toolset):</p>
 <ul>
 <li>create a new Netlify website (either from scratch by dragging and dropping a simple index.html, or by creating a site from a GitHub repository and then unlinking that repository); from the site settings get its ID to be saved as <code>NETLIFY_SITE_ID</code> in your repo secrets; from your account developer settings get a token to be saved as <code>NETLIFY_TOKEN</code> in your repo secrets.</li>
@@ -369,7 +391,7 @@
 </div>
 <div id="conclusion" class="section level2">
 <h2 class="hasAnchor">
-<a href="#conclusion" class="anchor"></a>Conclusion</h2>
+<a href="#conclusion" class="anchor" aria-hidden="true"></a>Conclusion</h2>
 <p>In this vignette we explained how to change the theming and layout of pkgdown websites. Further work to improve user experience is:</p>
 <ul>
 <li>Working on the article (<code><a href="../reference/build_articles.html">?build_articles</a></code>) and reference indexes (<code><a href="../reference/build_reference.html">?build_reference</a></code>).</li>
@@ -378,9 +400,9 @@
 </ul>
 </div>
   </div>
- <div class="col-md-3 d-none d-md-block" id="sidebar">
+ <div class="col-md-3 d-none d-md-block" id="pkgdown-sidebar">
         <div class="sticky-top">
-    <nav id="toc" data-toggle="toc"><h2 data-toc-skip>Contents</h2>
+    <nav id="toc"><h2 data-toc-skip>Contents</h2>
 
     </nav>
 </div>
@@ -404,20 +426,8 @@
 </div>
 
   
-<script src="https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.1/docsearch.min.js" integrity="sha256-GKvGqXDznoRYHCwKXGnuchvKSwmx9SRMrZOTh2g4Sb0=" crossorigin="anonymous"></script><script>
-  docsearch({
-    
-    
-    apiKey: 'fbd8d79ed49f21fc9ca7b2cf601a3f5b',
-    indexName: 'pkgdown',
-    inputSelector: 'input#search-input.form-control',
-    transformData: function(hits) {
-      return hits.map(function (hit) {
-        hit.url = updateHitURL(hit);
-        return hit;
-      });
-    }
-  });
-</script>
-</body>
+
+  
+
+  </body>
 </html>

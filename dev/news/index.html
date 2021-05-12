@@ -74,7 +74,9 @@
     <div id="pkgdown-development-version" class="section level2">
 <h2 class="pb-2 mt-4 mb-2 border-bottom pkg-version" data-toc-text="development version">
 <a href="#pkgdown-development-version" class="anchor" aria-hidden="true"></a>pkgdown (development version)</h2><h6 class="text-muted" data-toc-skip> CRAN release: Unreleased</h6>
-<ul><li>
+<ul><li><p>Long lines in code output are now wrapped, rather than requiring scrolling. This better matches <code><a href="https://pkgs.rstudio.com/rmarkdown/reference/html_document.html" class="external-link">rmarkdown::html_document()</a></code> and what you see in the console.</p></li>
+<li><p>Use <code>autolink_bare_uris</code> for Pandoc above version 2.0 (<a href="https://github.com/marcosmolla">@marcosmolla</a>, <a href="https://github.com/r-lib/pkgdown/issues/1618">#1618</a>).</p></li>
+<li>
 <p>pkgdown now supports defining redirects. (<a href="https://github.com/r-lib/pkgdown/issues/1259">#1259</a>, <a href="https://github.com/lorenzwalthert">@lorenzwalthert</a>). The syntax is the following, with old paths on the left, and new paths or URLs on the right.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">redirects</span><span class="kw">:</span></span>
 <span id="cb1-2"><a href="#cb1-2"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="kw">[</span><span class="st">"articles/old-vignette-name.html"</span><span class="kw">,</span><span class="at"> </span><span class="st">"articles/new-vignette-name.html"</span><span class="kw">]</span></span>
@@ -86,7 +88,7 @@
 <li><p>All links on the 404 pages (navbar, scripts, CSS) are now absolute if there is an URL in the configuration file. (<a href="https://github.com/r-lib/pkgdown/issues/1622">#1622</a>)</p></li>
 <li><p>Heading links/IDs in the changelog are now permanent except from links corresponding to the development version. They are built as the combination of the heading slug and package version number. (<a href="https://github.com/Bisaloo">@Bisaloo</a>, <a href="https://github.com/r-lib/pkgdown/issues/1015">#1015</a>)</p></li>
 <li><p>pkgdown’s deploy_to_branch() now cleans out the website directory by default (<code>clean = TRUE</code>). To revert to previous behaviour, call it with <code>clean = FALSE</code>. (<a href="https://github.com/r-lib/pkgdown/issues/1394">#1394</a>)</p></li>
-<li><p>pkgdown now supports local searching. It is enabled by default because no set-up is needed for users to search pkgdown websites. (<a href="https://github.com/r-lib/pkgdown/issues/1629">#1629</a>)</p></li>
+<li><p>pkgdown now supports local searching. It is enabled by default because no set-up is needed for users to search pkgdown websites. (<a href="https://github.com/r-lib/pkgdown/issues/1629">#1629</a>, with help from <a href="https://github.com/gustavdelius">@gustavdelius</a> in <a href="https://github.com/r-lib/pkgdown/issues/1655">#1655</a>)</p></li>
 <li><p>pkgdown builds a more exhaustive sitemap.xml even for websites built with Bootstrap 3. This might change Algolia results if you use Algolia for search. (<a href="https://github.com/r-lib/pkgdown/issues/1629">#1629</a>)</p></li>
 <li><p>Styling for errors, warnings, and messages has been tweaked. Messages are now displayed the same way as output, and warnings and errors are bolded, but not coloured. This is part of a suite of changes that allow package authors greater control over message/warning/error appearance.</p></li>
 <li><p>Autolinking no longer failures if a package contains duplicated Rd aliases.</p></li>
@@ -97,7 +99,7 @@
 <li><p>the default GitHub/GitLab links gained an aria-label; use of aria-labels for other icons is encouraged in the docs. (<a href="https://github.com/r-lib/pkgdown/issues/1635">#1635</a>)</p></li>
 </ul></li>
 <li><p>README badges in a single paragraph, placed between the <code>badges: end</code> and <code>badges: end</code> comments, are detected again (<a href="https://github.com/r-lib/pkgdown/issues/1603">#1603</a>).</p></li>
-<li><p>Automatic links to reference pages were generated incorrectly if the <code>\name{}</code> entry in the <code>*.Rd</code> file didn’t match the filename (<a href="https://github.com/dmurdoch">@dmurdoch</a>, <a href="https://github.com/r-lib/pkgdown/issues/1586">#1586</a>).</p></li>
+<li><p>Automatic links to reference pages were generated incorrectly, and self-links were generated, if the <code>\name{}</code> entry in the <code>*.Rd</code> file didn’t match the filename (<a href="https://github.com/dmurdoch">@dmurdoch</a>, <a href="https://github.com/r-lib/pkgdown/issues/1586">#1586</a>; <a href="https://github.com/r-lib/pkgdown/issues/1676">#1676</a>).</p></li>
 <li><p>New “Customize your pkgdown website” vignette (<a href="https://github.com/r-lib/pkgdown/issues/1573">#1573</a>).</p></li>
 <li><p>Added extension points to make HTML widgets (and RGL in particular) work in rendered examples (<a href="https://github.com/dmurdoch">@dmurdoch</a>).</p></li>
 <li>
